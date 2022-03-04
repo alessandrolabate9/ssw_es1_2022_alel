@@ -1,7 +1,7 @@
-# Esercizio di preparazione al progetto (Passo 1)
+# Esercizio di preparazione al progetto (Passo 2)
 
-Ora create un paragrafo nell'HTML con il tag <p> e collocate il tasto al suo interno (non nel body).
+Ora collegate una funzione callback al tasto. La funzione visualizza il valore di una variabile in un nuovo paragrafo, da aggiungere nell'HTML. Dovrete anche definire ed inizializzare (a piacere) la variabile di cui visualizzare il valore.
 
-Per collocare il nuovo elemento usate una getElementById, con parametro il valore dell'attributo id che avrete associato all'elemento paragrafo. Applicate poi la appendChild a questa variabile.
+Per associare il callback utilizzate un addEventListener, specificando l'evento di innesco ("click") e la funzione callback.
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-rhcvya)
