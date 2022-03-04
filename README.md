@@ -1,7 +1,10 @@
-# Esercizio di preparazione al progetto (Passo 2)
+# Esercizio di preparazione al progetto (Passo 3)
 
-Ora collegate una funzione callback al tasto. La funzione visualizza il valore di una variabile in un nuovo paragrafo, da aggiungere nell'HTML. Dovrete anche definire ed inizializzare (a piacere) la variabile di cui visualizzare il valore.
+Create un array di alcune posizioni (indicativamente 10) ed associate il contenuto di ciascun elemento ad un tasto, in modo che premendo il tasto compaia il valore (attributo "value") associato al tasto stesso.
 
-Per associare il callback utilizzate un addEventListener, specificando l'evento di innesco ("click") e la funzione callback.
+Per creare l'array senza necessariamente riempirlo potete utilizzare "new Array(10)" che crea una array di valori indefiniti di dieci posizioni. Poi potrete inizializzarne alcune per verificare il funzionamento del programma.
+
+Nel callback associato al tasto, per recuperare il "value" associato al tasto usate la variabile "this": nel callback questa corrisponde all'elemento su cui si è verificato l'evento (il click), e quindi potete risalire al valore del suo attributo "value".
+
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-rhcvya)
