@@ -23,5 +23,5 @@ document.getElementById("P6").value = "Giacomo";
 //gestione click button
 const elementi = Array.from(document.getElementsByClassName('posto'));
 for(let el of elementi){
-  el.click = () => {console.log("Pr");document.getElementById("nome").innerHTML = el.value};
+  el.addEventListener('click', () => {document.getElementById("nome").innerHTML = el.value});
 }
