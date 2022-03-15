@@ -1,10 +1,14 @@
-# Esercizio di preparazione al progetto (Passo 4)
-## 1
-Ora i valori nell'array di bottoni vengono caricati da un altro array di stringhe. Abbiamo quindi due array, uno di stringhe (posto), ed uno di bottoni (prenotazione) con la stessa dimensione.
+# Esercizio di preparazione al progetto (Passo 5)
 
-Per inizializzare l'array di stringhe utilizziamo una fill() (https://www.w3schools.com/jsref/jsref_fill.asp)
-## 2
-Per caricare l'array di stringhe nell'array di bottoni utilizziamo una map(). la funzione definita nella map prende come parametri l'elemento iterato e il suo indice, per impostare il valore del bottone nella stessa posizione.
+Costruiamo un array di array di stringhe, con le stesse proprietà dette prima. Il questo modo avremo i posti prenotati nella "platea" del nostro teatro. In corrispondenza avremo un array di array di bottoni, creato utilizzando i nomi contenuti nel primo.
+
+Per creare l'array bidimensionale di stringhe inizializziamo un array corrispondente alle file, e a ciascuna fila facciamo corrispondere un array di stringhe ("x" per il posto libero).
+
+Poi eseguiamo due operazioni di map annidate: una per costruire l'array di file, e ciascuna fila costituita da tasti con la proprietà "value" corrispondente alla stringa nella cella corrispondente dell'array.
+
+I bottoni sono sistemati per file consecutive, separando ciascuna con un elemento "br" (document.createElement('br')).
+
+Notare che, per costruire il nome del posto (ad es. "P43") ambedue gli indici devono essere visibili nel map più interno che costruisce il bottone corrispondente al singolo posto.
 
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-rhcvya)
