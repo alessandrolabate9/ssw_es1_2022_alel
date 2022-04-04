@@ -3,6 +3,28 @@ import './style.css';
 
 const posto = document.getElementById('posto');
 const nome = document.getElementById('nome');
+const posti = new Array(10);
+const file = new Array(5);
+file.fill(posti.fill('x'));
+file[0][2] = "Aldo";
+file[2][5] = "Marianna";
+file[4][7] = "Giacomo";
+file.map((y, i) => {
+  var br = document.createElement('br');
+  var  p = document.createElement('p');
+  posto.append(br);
+  posti.map((j, l)=> {
+      const btn = document.createElement('button');
+      btn.value = j;
+      btn.innerHTML = "P"+i+l;
+      btn.onclick = () => nome.innerHTML = btn.value;
+      posto.appendChild(btn);
+      
+  });
+})
+/*
+const posto = document.getElementById('posto');
+const nome = document.getElementById('nome');
 // due array con la stessa dimensione , posti e prenotazione
 var posti = new Array(
   new Array(10).fill('x'),
@@ -33,3 +55,4 @@ posti.map((x, index) => {
 
 
 //assegnamento nuovi valori
+*/
