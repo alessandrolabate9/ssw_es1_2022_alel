@@ -3,12 +3,9 @@ import './style.css';
 
 const posto = document.getElementById('posto');
 const nome = document.getElementById('nome');
-const posti = new Array(10);
+const posti = new Array(10).fill('x');
 const file = new Array(5);
-file.fill(posti.fill('x'));
-file[0][2] = "Aldo";
-file[2][5] = "Marianna";
-file[4][7] = "Giacomo";
+file.fill(posti);
 file.map((y, i) => {
   var br = document.createElement('br');
   var  p = document.createElement('p');
