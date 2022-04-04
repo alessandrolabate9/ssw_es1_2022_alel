@@ -1,6 +1,6 @@
 # Esercizio di preparazione al progetto (Passo 5)
 
-Costruiamo un array di array di stringhe, con le stesse proprietà dette prima. Il questo modo avremo i posti prenotati nella "platea" del nostro teatro. In corrispondenza avremo un array di array di bottoni, creato utilizzando i nomi contenuti nel primo.
+Costruiamo un array di array di stringhe, con le stesse proprietà dette prima. In questo modo avremo i posti prenotati nella "platea" del nostro teatro. In corrispondenza avremo un array di array di bottoni, creato utilizzando i nomi contenuti nel primo.
 
 Per creare l'array bidimensionale di stringhe inizializziamo un array corrispondente alle file, e a ciascuna fila facciamo corrispondere un array di stringhe ("x" per il posto libero).
 
