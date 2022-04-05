@@ -3,9 +3,15 @@ import './style.css';
 
 const posto = document.getElementById('posto');
 const nome = document.getElementById('nome');
-const posti = new Array(10).fill('x');
-const file = new Array(5);
-file.fill(posti);
+//const posti = new Array(10).fill('x');
+//const file = new Array(5);
+//file.fill(posti);
+const posti = 10;
+const file = 5;
+const prenotazione = new Array(file).fill("").map(()=>Array(posti).fill('x'));
+prenotazione[1][3] = "Gio";
+console.log(prenotazione);
+/*
 file.map((y, i) => {
   var br = document.createElement('br');
   var  p = document.createElement('p');
