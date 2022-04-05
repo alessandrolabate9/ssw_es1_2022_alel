@@ -18,6 +18,10 @@ prenotazione.map((p, pindex) =>{
     const btn = document.createElement('button');
     btn.value = f;
     btn.innerHTML = "P"+findex+pindex;
+    if (btn.value=='x')
+      btn.style ="color:green";
+    else
+      btn.style="color:red";
     btn.onclick = () => nome.innerHTML = btn.value;
     posto.appendChild(btn);
   });
