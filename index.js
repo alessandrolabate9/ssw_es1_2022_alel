@@ -11,8 +11,7 @@ prenotazione[1][3] = "Giovanna";
 prenotazione[4][2] = "Giacomo";
 console.log(prenotazione);
 prenotazione.map((p, pindex) =>{
-  var br=document.createElement("br");
-  posto.appendChild(br);
+  posto.appendChild(document.createElement("br"));
   p.map((f, findex)=>{
     const btn = document.createElement('button');
     btn.value = f;
