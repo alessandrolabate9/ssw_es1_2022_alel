@@ -6,7 +6,9 @@ const nome = document.getElementById('nome');
 const posti = 10;
 const file = 5;
 const prenotazione = new Array(file).fill("").map(()=>Array(posti).fill('x'));
-const prenotazione_palchi ="";
+const prenotazione_palchi = new Array(3).fill("").map(()=>{
+
+});
 prenotazione[0][7] = "Aldo";
 prenotazione[1][3] = "Giovanna";
 prenotazione[4][2] = "Giacomo";
