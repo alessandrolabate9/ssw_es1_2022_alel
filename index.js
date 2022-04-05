@@ -6,8 +6,22 @@ const nome = document.getElementById('nome');
 const posti = 10;
 const file = 5;
 const prenotazione = new Array(file).fill("").map(()=>Array(posti).fill('x'));
-prenotazione[1][3] = "Gio";
+prenotazione[0][7] = "Aldo";
+prenotazione[1][3] = "Giovanna";
+prenotazione[4][2] = "Giacomo";
 console.log(prenotazione);
+prenotazione.map((p, pindex) =>{
+  var br=document.createElement("br");
+  var par = document.createElement("p");
+  posto.appendChild(br);
+  p.map((f, findex)=>{
+    const btn = document.createElement('button');
+    btn.value = f;
+    btn.innerHTML = "P"+findex+pindex;
+    btn.onclick = () => nome.innerHTML = btn.value;
+    posto.appendChild(btn);
+  });
+})
 /*
 file.map((y, i) => {
   var br = document.createElement('br');
