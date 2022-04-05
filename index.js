@@ -12,7 +12,6 @@ prenotazione[4][2] = "Giacomo";
 console.log(prenotazione);
 prenotazione.map((p, pindex) =>{
   var br=document.createElement("br");
-  var par = document.createElement("p");
   posto.appendChild(br);
   p.map((f, findex)=>{
     const btn = document.createElement('button');
