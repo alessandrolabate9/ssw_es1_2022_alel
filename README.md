@@ -1,14 +1,8 @@
-# Esercizio di preparazione al progetto (Passo 5)
+# Esercizio di preparazione al progetto (Passo 6)
 
-Costruiamo un array di array di stringhe, con le stesse proprietà dette prima. In questo modo avremo i posti prenotati nella "platea" del nostro teatro. In corrispondenza avremo un array di array di bottoni, creato utilizzando i nomi contenuti nel primo.
+Terminiamo la costruzione del teatro aggiungendo anche quattro palchi, rappresentati di nuovo come un array. Ciascun palco ha sei posti. La sua gestione è del tutto analoga a quella della platea, quindi ricopiamo e rinominiamo, trasgredendo il principio DRY (ci penseremo dopo).
 
-Per creare l'array bidimensionale di stringhe inizializziamo un array corrispondente alle file, e a ciascuna fila facciamo corrispondere un array di stringhe ("x" per il posto libero).
-
-Poi eseguiamo due operazioni di map annidate: una per costruire l'array di file, e ciascuna fila costituita da tasti con la proprietà "value" corrispondente alla stringa nella cella corrispondente dell'array.
-
-I bottoni sono sistemati per file consecutive, separando ciascuna con un elemento "br" (document.createElement('br')).
-
-Notare che, per costruire il nome del posto (ad es. "P43") ambedue gli indici devono essere visibili nel map più interno che costruisce il bottone corrispondente al singolo posto.
+Dovrà essere aggiunto un nuovo paragrafo nel file HTML, e una variabile che lo rappresenti nello script.
 
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/js-rhcvya)
